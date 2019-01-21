@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import App from './components/App/App'
 import './index.css'
 
 const rootEl = document.getElementById('root')
@@ -11,8 +11,8 @@ ReactDOM.render(
 )
 
 if (module.hot) {
-  module.hot.accept('./App', () => {
-    const NextApp = require('./App').default
+  module.hot.accept('./components/App/App', () => {
+    const NextApp = require('./components/App/App').default
     ReactDOM.render(
       <NextApp />,
       rootEl
